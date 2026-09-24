@@ -4,57 +4,82 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return """
-    <html>
-    <head>
-        <title>OLKILORITI SENIOR SCHOOL</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body style="font-family:Arial; margin:0; background:#f0f4f8;">
-        
-        <div style="background:#0d47a1; color:white; padding:30px; text-align:center;">
-            <h1 style="margin:0;">OLKILORITI SENIOR SCHOOL</h1>
-            <p style="margin:10px 0; font-size:18px; background:#ffca28; color:#0d47a1; display:inline-block; padding:6px 18px; border-radius:20px; font-weight:bold;">
-                MOTTO: STRIVE TO EXCELL
-            </p>
-            <p style="margin:5px 0;">P.O BOX 25 LOLGORIAN</p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mara River - The Heart of Maasai Mara</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f0f9ff]">
 
-        <div style="max-width:850px; margin:20px auto; padding:15px;">
-            
-            <div style="background:white; padding:25px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center;">
-                <h2 style="color:#0d47a1; margin-top:0;">Welcome to Olkiloriti Senior School</h2>
-                <p>We offer Senior Secondary Education from <b>GRADE 10 TO GRADE 12</b></p>
-                <div style="background:#e8f5e9; padding:15px; border-radius:10px; border-left:5px solid #2e7d32; margin-top:15px;">
-                    <h3 style="color:#2e7d32; margin:0;">✅ FULLY EQUIPED FOR CBE LEARNING</h3>
-                    <p style="margin:5px 0 0 0;">Competency Based Education (CBE) - Ready for All Pathways: STEM, Social Sciences & Arts and Sports</p>
-                </div>
-            </div>
+<header class="bg-blue-900 text-white px-6 py-4 flex justify-between">
+  <h1 class="font-black text-xl">MARA RIVER SAFARIS</h1>
+  <span class="bg-amber-400 text-black px-3 py-1 rounded-full text-xs font-bold">Trans Mara - Kenya / Tanzania</span>
+</header>
 
-            <div style="display:flex; gap:15px; margin-top:20px; flex-wrap:wrap;">
-                <div style="flex:1; min-width:220px; background:white; padding:20px; border-radius:10px; text-align:center;">
-                    <h3 style="color:#0d47a1;">🎓 Grades</h3>
-                    <p><b>Grade 10</b><br><b>Grade 11</b><br><b>Grade 12</b><br>Senior School</p>
-                </div>
-                <div style="flex:1; min-width:220px; background:white; padding:20px; border-radius:10px; text-align:center;">
-                    <h3 style="color:#0d47a1;">🏫 Facilities</h3>
-                    <p>Fully Equiped Labs<br>Library & ICT Lab<br>CBE Classrooms</p>
-                </div>
-                <div style="flex:1; min-width:220px; background:white; padding:20px; border-radius:10px; text-align:center;">
-                    <h3 style="color:#0d47a1;">📍 Our Address</h3>
-                    <p><b>P.O BOX 25<br>LOLGORIAN</b><br>Transmara South<br>Narok County</p>
-                </div>
-            </div>
+<div class="bg-gradient-to-br from-blue-900 via-blue-700 to-teal-600 text-white text-center py-20 px-4">
+  <h2 class="text-5xl font-black">MARA RIVER</h2>
+  <p class="mt-3 text-2xl italic text-blue-200">"Where the Great Migration Crosses"</p>
+  <p class="mt-2">World Famous River in Maasai Mara National Reserve - Lolgorien, Trans Mara South</p>
+  <div class="mt-8 flex justify-center gap-4">
+    <span class="bg-white/20 px-4 py-2 rounded-full">🐊 Crocodiles</span>
+    <span class="bg-white/20 px-4 py-2 rounded-full">🦛 Hippos</span>
+    <span class="bg-white/20 px-4 py-2 rounded-full">🦓 Wildebeest Migration</span>
+  </div>
+</div>
 
-            <div style="background:#0d47a1; color:white; text-align:center; padding:20px; border-radius:15px; margin-top:20px;">
-                <h3 style="margin:0;">ADMISSION OPEN FOR GRADE 10 - 12</h3>
-                <p style="margin:5px 0 0 0;">Visit us at P.O BOX 25 LOLGORIAN | STRIVE TO EXCELL</p>
-            </div>
+<section class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 -mt-10 px-6">
+  <div class="bg-white p-6 rounded-2xl shadow-lg text-center border-b-4 border-blue-900">
+    <h3 class="font-bold">The Great Migration</h3>
+    <p class="text-sm text-gray-600 mt-2">Over 1.5 Million wildebeest cross Mara River every July-October</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow-lg text-center border-b-4 border-amber-500">
+    <h3 class="font-bold">Location</h3>
+    <p class="text-sm text-gray-600 mt-2">From Mau Forest to Lake Victoria<br>395km Long</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow-lg text-center border-b-4 border-green-600">
+    <h3 class="font-bold">Activities</h3>
+    <p class="text-sm text-gray-600 mt-2">Game Drives, River Safaris, Photography, Cultural Tours</p>
+  </div>
+</section>
 
-        </div>
-    </body>
-    </html>
+<section class="max-w-6xl mx-auto p-8 mt-8 grid md:grid-cols-2 gap-8">
+  <div>
+    <h2 class="text-3xl font-bold text-blue-900">About Mara River</h2>
+    <p class="mt-4 text-gray-700">
+    Mara River is the lifeline of Maasai Mara and Serengeti ecosystem. It starts in Narok County, 
+    passes near Lolgorien and Iltolish, and flows into Lake Victoria. Famous for dramatic wildebeest crossings 
+    where crocodiles wait. The river supports hippos, elephants, and the Maasai community.
+    </p>
+    <ul class="mt-4 space-y-2">
+      <li>✓ Best Time to Visit: July - October (Migration)</li>
+      <li>✓ Nearest Town: Lolgorien (5km)</li>
+      <li>✓ Park Entry: Via Talek, Sekenani, Oloololo Gates</li>
+      <li>✓ Local Guides Available</li>
+    </ul>
+  </div>
+  <div class="bg-blue-900 text-white p-6 rounded-2xl">
+    <h3 class="font-bold text-xl">Book Your Tour</h3>
+    <p class="mt-2 text-blue-200">Mara River Lodge | Camp | Day Trip from Lolgorien</p>
+    <div class="mt-4 bg-white text-blue-900 p-4 rounded-xl">
+      <p><b>Phone:</b> 07XX XXX XXX</p>
+      <p><b>M-Pesa Till:</b> 123456</p>
+      <p><b>Location:</b> Mara River Bridge, Lolgorien</p>
+    </div>
+    <a href="#" class="inline-block mt-4 bg-amber-400 text-black px-6 py-2 rounded-full font-bold">WhatsApp Booking</a>
+  </div>
+</section>
+
+<footer class="bg-black text-white text-center p-6 mt-10">
+  <p>© 2026 Mara River Safaris - Lolgorien, Trans Mara South</p>
+  <p class="text-sm text-gray-400">Near Iltolish Mara Schools | PEFA Church Lolgorien Area</p>
+</footer>
+
+</body>
+</html>
     """
 
 if __name__ == '__main__':
-    print("Olkiloriti Website Running on http://127.0.0.1:8000")
-    app.run(debug=True, port=8000)
+    app.run(debug=True)
